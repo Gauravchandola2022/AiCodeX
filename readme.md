@@ -1,10 +1,10 @@
-# CompilerX
+# AiCodeX
 
-CompilerX is a compiler that compiles cx code into Assembly code using flex and bison in C. The purpose of this compiler is to learn how to use flex and bison in C and how to write a compiler for your own language in C. It is also a good example of how to use flex and bison in C to write a compiler.
+AiCodeX is a compiler that compiles cx code into Assembly code using flex and bison in C. The purpose of this compiler is to learn how to use flex and bison in C and how to write a compiler for your own language in C. It is also a good example of how to use flex and bison in C to write a compiler.
 
 ## Installation
 
-To install CompilerX, you need to have flex and bison installed on your computer. You can download flex and bison from [here](https://www.gnu.org/software/flex/bison.html).
+To install AiCodeX, you need to have flex and bison installed on your computer. You can download flex and bison from [here](https://www.gnu.org/software/flex/bison.html).
 
 ## Building CompilerX
 
@@ -60,7 +60,7 @@ $ mkdir -p bin
 $ cp cmpx.exe bin/
 ```
 
-## Using CompilerX
+## Using AiCodeX
 
 ### Compiling a CX Program
 
@@ -80,7 +80,7 @@ This will:
 
 ### Compiler Output
 
-CompilerX generates several outputs:
+AiCodeX generates several outputs:
 
 1. **Console Output**: Shows the tokenization process, AST visualization, and compilation status
 2. **AST JSON File**: `ast_all_statements.json` contains the complete AST in JSON format
@@ -252,11 +252,11 @@ This approach is particularly beneficial in scenarios where frequent memory allo
 ---
 
 ## Author
-[Jeevan Joshi](https://github.com/jeevanjoshi4434)
+[Gaurav Chandola](https://github.com/Gauravchandola2022)
 
 ## License
 
-CompilerX is released under the [MIT License](https://opensource.org/licenses/MIT).
+AiCodeX is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Future work
 - Convert large If-Else blocks to Switch-Case blocks for better performance.
@@ -264,3 +264,4 @@ CompilerX is released under the [MIT License](https://opensource.org/licenses/MI
 - faster Execution.
 - statement issues, for open code it will work but for any function it will not, basically `}` is not being detectable and any return statement. (should be fixed soon)
 - Create a function pool with parameters and return types, and use it to make a function table.
+- Adding AI to the Compiler.
