@@ -263,6 +263,6 @@ AiCodeX is released under the [MIT License](https://opensource.org/licenses/MIT)
 - Convert large If-Else blocks to Switch-Case blocks for better performance.
 - Bytecode Generation (Platform Independency).
 - faster Execution.
-- statement issues, for open code it will work but for any function it will not, basically `}` is not being detectable and any return statement. (should be fixed soon)
+- statement issues, for open code it will work but for any function it will not, basically `}` is not being detectable and any return statement. (should be fixed soon).
 - Create a function pool with parameters and return types, and use it to make a function table.
 - Adding AI to the Compiler.
