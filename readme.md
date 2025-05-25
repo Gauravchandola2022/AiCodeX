@@ -74,9 +74,9 @@ This will:
 1. Tokenize the source code.
 2. Parse the tokens into an Abstract Syntax Tree (AST).
 3. Perform semantic analysis.
-4. Generate assembly code
-5. Output visualization of the AST structure
-6. Export the AST to JSON for further analysis
+4. Generate assembly code.
+5. Output visualization of the AST structure.
+6. Export the AST to JSON for further analysis.
 
 ### Compiler Output
 
