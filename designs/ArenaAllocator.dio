@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="mb7v9p7cAqvZXtiCTJZJ" name="Page-1">
+        <mxGraphModel dx="798" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="[Initial State]&#xa;arenaHead = NULL&#xa;&#xa;&#xa;&#xa;&#xa;After first allocation (size = 100 bytes)&#xa;&#xa;&#xa;+------------------+   +------------------------------------+&#xa;|   Arena Struct   |--&gt;|       block[ARENA_BLOCK_SIZE]      |&#xa;|  offset = 100    |   |   (100 bytes used, rest free)      |&#xa;|  size = 4096     |   +------------------------------------+&#xa;|  next  = NULL    |&#xa;+------------------+&#xa;&#xa;&#xa;&#xa;&#xa;After second allocation (size = 200 bytes)&#xa;&#xa;&#xa;+------------------+   +------------------------------------+&#xa;|   Arena Struct   |--&gt;|       block[ARENA_BLOCK_SIZE]      |&#xa;|  offset = 300    |   |   (100 + 200 = 300 bytes used)     |&#xa;|  size = 4096     |   +------------------------------------+&#xa;|  next  = NULL    |&#xa;+------------------+&#xa;&#xa;&#xa;&#xa;&#xa;If a big allocation comes (size = 5000 bytes &gt; ARENA_BLOCK_SIZE)&#xa;&#xa;&#xa;+------------------+   +------------------------------------+&#xa;|   Arena Struct   |--&gt;|      block[5000 bytes]             |  &lt;- New Arena&#xa;|  offset = 5000   |   +------------------------------------+&#xa;|  size = 5000     |   |&#xa;|  next  ----------|---+&#xa;|                  |&#xa;v&#xa;+------------------+   +------------------------------------+&#xa;|   Arena Struct   |--&gt;|       block[ARENA_BLOCK_SIZE]      |  &lt;- Previous Arena&#xa;|  offset = 300    |   +------------------------------------+&#xa;|  size = 4096     |&#xa;|  next  = NULL    |&#xa;+------------------+&#xa;&#xa;&#xa;&#xa;&#xa;+------------------------------------+&#xa;|             Arena List             |&#xa;+------------------------------------+&#xa;arenaHead --&gt; [5000 bytes block] --&gt; [4096 bytes block] --&gt; NULL" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="100" width="520" height="830" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,24 @@
+num x = 10 ;
+num y = 15 ;
+print x ;
+print y ;
+
+log ab = false ;
+
+ab = true ;
+
+print ab ;
+
+str a = "Hello" ;
+
+print a ;
+
+x = x + y ;
+
+x = 10 ;
+
+print x ;
+
+num z = x * 2 ;
+
+print z ;

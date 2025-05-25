@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+#fileInput {
+    margin-bottom: 20px;
+}
+
+#canvasContainer {
+    max-height: 800px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+#treeCanvas {
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+}
