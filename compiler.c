@@ -140,7 +140,7 @@ void compileFile(const char* filename) {
     freeArena(); 
 }
 
-
+# main function 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         printf("Usage: %s <filename.cx>\n", argv[0]);
@@ -162,6 +162,5 @@ int main(int argc, char* argv[]) {
     }
 
     compileFile(argv[1]);
-
     return 0;
 }
