@@ -21,5 +21,5 @@ int isComparisonOperator(const char *value);
 int evaluateExpression(ASTNode *expr);
 ASTNode* functionCall(const char* name);
 
-#endif // EXPRESSIONS_H
+#endif
 
