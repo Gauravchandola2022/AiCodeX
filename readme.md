@@ -254,6 +254,7 @@ This approach is particularly beneficial in scenarios where frequent memory allo
 ## Author
 - [Gaurav Chandola](https://github.com/Gauravchandola2022)
 - [Sachin Bhawala](https://github.com/SachinBhawala)
+- [Jyoti Negi](https://github.com/Jyoti9014)
 
 ## License
 
