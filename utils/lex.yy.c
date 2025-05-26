@@ -30,7 +30,7 @@
 /* The "const" storage-class-modifier is valid. */
 #define YY_USE_CONST
 
-#else	/* ! __cplusplus */
+#else
 
 #if __STDC__
 
