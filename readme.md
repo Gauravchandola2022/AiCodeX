@@ -71,12 +71,12 @@ $ cmpx example.cx
 ```
 
 This will:
-1. Tokenize the source code
-2. Parse the tokens into an Abstract Syntax Tree (AST)
-3. Perform semantic analysis
-4. Generate assembly code
-5. Output visualization of the AST structure
-6. Export the AST to JSON for further analysis
+1. Tokenize the source code.
+2. Parse the tokens into an Abstract Syntax Tree (AST).
+3. Perform semantic analysis.
+4. Generate assembly code.
+5. Output visualization of the AST structure.
+6. Export the AST to JSON for further analysis.
 
 ### Compiler Output
 
@@ -252,7 +252,8 @@ This approach is particularly beneficial in scenarios where frequent memory allo
 ---
 
 ## Author
-[Gaurav Chandola](https://github.com/Gauravchandola2022)
+- [Gaurav Chandola](https://github.com/Gauravchandola2022)
+- [Sachin Bhawala](https://github.com/SachinBhawala)
 
 ## License
 
@@ -262,6 +263,6 @@ AiCodeX is released under the [MIT License](https://opensource.org/licenses/MIT)
 - Convert large If-Else blocks to Switch-Case blocks for better performance.
 - Bytecode Generation (Platform Independency).
 - faster Execution.
-- statement issues, for open code it will work but for any function it will not, basically `}` is not being detectable and any return statement. (should be fixed soon)
+- statement issues, for open code it will work but for any function it will not, basically `}` is not being detectable and any return statement. (should be fixed soon).
 - Create a function pool with parameters and return types, and use it to make a function table.
 - Adding AI to the Compiler.
