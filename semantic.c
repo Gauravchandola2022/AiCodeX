@@ -217,7 +217,7 @@ void checkSemantic(ASTNode *node) {
             break;
     }
 
-    // Check the next node in the list
+    // Check the next node 
     printf("Checking next node\n");
     if (node->next) {
         checkSemantic(node->next);
